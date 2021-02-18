@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>翀翀滴博客主页</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <div class="header"onmouseover="order()"onmouseout="orderFade()">
+        <div id="down">
+            <img src="./image/down.png" width="30px" height="20px" alt="下拉图标">
+        </div>
+        <ul>
+            <li><img src="./image/unclock.png"width="50px"height="50px"onclick="clock()">LOCK</li>
+            <li><img src="./image/unknight.png" width="50px"height="50px"onclick="knight()">KNIGHT</li>
+            <li><img src="./image/unstudy.png"width="50px" height="50px">STUDY</li>
+            <li><img src="./image/me.png"width="50px"height="50px"onclick="me()">ME</li>
+            <li><img src="./image/option.png"width="50px"height="50px">OPTION</li>
+            <li><img src="./image/time.png"width="50px"height="50px">TIME</li>
+            <li><img src="./image/create.png"width="50px"height="50px">WRITE</li>
+        </ul>
+    </div>
+    <div class="green1 leaf1"></div>
+    <div class="green1 leaf2"></div>
+    <div class="green1 leaf3"></div>
+    <div class="green1 leaf4"></div>
+    <div class="green1 leaf5"></div>
+    <div class="green2 leaf6"></div>
+    <div class="green2 leaf7"></div>
+    <div class="green2 leaf8"></div>
+    <div class="green2 leaf9"></div>
+    <div class="green1 leaf10"></div>
+    <hr id="cut">
+    <div id="title">Welcome To My BLOG !</div>
+    <div class="picture home"onclick="state1()">
+        <img src="./image/introduction.png" width="90px" height="80px">
+    </div>
+    <div class="picture daka"onclick="state2()">
+        <img src="./image/daka.png" width="90px" height="80px">
+    </div>
+    <div class="picture tip"onclick="state3()">
+        <img src="./image/tip.png" width="90px" height="80px">
+    </div>
+    <div class="main">
+    </div>
+    <div class="introduction"onclick="state1()">
+        <p><span>MADE BY</span>:</p>
+        <p>Handsome  chong</p>
+        <p><span>SUM</span>:</p>
+        <p>2000 code lines in sum</p>
+        <p><span>AUTHOR'S WORDS</span>:</p>
+        <p>Thanks for visiting my blog!</p>
+        <p>There are plenty of my notes,</p>
+        <p>hope you can learn something!</p>
+        <p>Buy the author a cup of coffee</p>
+        <p>if you like!Thanks~</p>
+        <p>
+            <img src="image/QR-code.jpg"width="40px"height="40px">
+        </p>
+        <p><span>UPDATE TIME</span>:</p>
+        <p>December 28th ,2019</p>
+    </div>
+    <div class="dakablock"onclick="state2()">
+        <p><span>TODAY</span>:</p>
+        <p>A nice day starts at visiting my blog!</p>
+        <p><span>WEATHER</span>:</p>
+        <p><b>天津</b></p>
+        <p id="tj"></p>
+        <p><b>北京(魔都):</b></p>
+        <p id="bj"></p>
+        <p><span>Daily sentence</span></p>
+        <p id="sentence1">Draw inspiration from beautiful writings~</p>
+        <p id="sentence2"></p>
+    </div>
+    <div class="tipblock"onclick="state3()">
+        <p><span>DONT'T FORGET</span>:</p>
+        <ol>
+            <li>制作叶子切换效果</li>
+            <li>英语考试试听，查考场</li>
+            <li>元旦拜年，要红包</li>
+            <li>好像也没啥了</li>
+            <li>记得刷不知好歹</li>
+        </ol>
+    </div>
+    <div class="footer"></div>
+    <script src="./function.js"></script>
+</body>
+</html>
