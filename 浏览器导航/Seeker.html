@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seeker浏览器</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./keyframes.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./制作素材/其他素材/favicon.ico"/>
+</head>
+<body>
+    <div id="loading">
+        <img src="https://i.loli.net/2020/01/30/1sXMrV9x3lWOgtP.jpg" width="100%" height="1000px">
+    </div>
+    <div id="picture">
+        <img src="https://i.loli.net/2020/01/30/USTLV2Dy6ECKX7Z.png" width="500px" height="120px">
+    </div>
+    <div id="pao">
+        <p>搜索</p>
+    </div>
+    <div id="wechatQRcode">
+        <img src="https://i.loli.net/2020/01/31/fWXJa6A3dxFsZN5.jpg" width="150px" height="150px">
+    </div>
+    <div id="qqQRcode">
+        <img src="https://i.loli.net/2020/01/31/FaPY2qUdftLz1Zr.png" width="150px" height="150px">
+    </div>
+    <div class="line" id="line1"></div>
+    <div class="line" id="line2"></div>
+    <div class="line" id="line3"></div>
+    <div id="main">
+        <div id="header">
+            <img src="https://i.loli.net/2020/01/30/ulGaRH8bP3NoE6C.png" width="200px" height="80px"/>
+        </div>
+        <div class="top-nav">
+            <ul>
+                <img class="off" src="https://i.loli.net/2020/01/31/R5bV1XndUyBD46C.png" width="32px"height="32px"/><li onclick="knight()">关灯</li>
+                <li>box2</li>
+                <li>box3</li>
+                <li>box4</li>
+            </ul>
+        </div>
+        <div class="weather" onmouseover="expand()" onmouseout="tiny()">
+            <div class="arrow"></div>
+            <img id="temperature" src="" width="70px" height="70px">
+            <img id="weather" src="" width="70px" height="70px">
+            <p></p>
+            <p></p>
+            <p id="date"></p>
+        </div>
+        <div class="main-nav">
+            <form method="get" action="http://www.baidu.com.cn/s?cl=3">
+                <input id="input" type="text" name="wd" placeholder="请输入关键词搜索"/>
+                <div class="search" onmouseover="emerge()" onmouseout="fade()">
+                    <input id="submit" type="submit">
+                    <img src="https://i.loli.net/2020/01/30/GtDny84ZcTjR9J1.png" width="45px" height="45px"/>
+                </div>
+            </form>
+        </div>
+        <div class="switch" onclick="transform()">
+            <img src="https://i.loli.net/2020/01/30/FoRDPmVhcM3wBZ4.png" title="点击刷新图片"/>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="bottom-nav">
+            <span><strong>喂养我们</strong></span>
+            <img class="qq" src="https://i.loli.net/2020/01/30/AEWU4TaJe7snRvZ.png" width="40px" height="40px" onmouseover="emerge1()" onmouseout="fade1()"/>
+            <img class="wechat" src="https://i.loli.net/2020/01/30/TbO3WVYwC5SeFit.png" width="40px" height="40px" onmouseover="emerge2()" onmouseout="fade2()"/>
+            <span style="font-size: x-small; position: relative;top:80px;left:1180px;">@此版本为Seeker浏览器1.0测试版本</span>
+        </div><hr width="1250" style="position:absolute;left:150px;top:100px;"/>
+        <div class="column recommand">
+            <h5>猜你喜欢</h5>
+            <a href="https://www.pintia.cn" target="blank">
+                <p><img class="PTA" src="https://i.loli.net/2020/01/30/inzDE3sIKSuWVYN.png" width="300px" height="40px"/></p>
+            </a>
+            <a href="https://www.codeforces.com" target="blank">
+                <p><img class="codeforces" src="https://i.loli.net/2020/01/30/YlgbxwnfUZOJGRM.png"/></p>
+            </a>
+                <p>
+                <a href="https://www.zhihu.com" target="blank">
+                    <img class="zhihu" src="https://i.loli.net/2020/01/30/CcsyRYjk1Ib6SHX.png" width="80px"height="40px"/>
+                </a>
+                <a href="https://www.bilibili.com/" target="blank">
+                    <img class="bilibili" src="https://i.loli.net/2020/01/30/k2QCyAl5OuDZfWY.png" width="40px" height="40px" style="margin-left: 40px;""/>
+                </a>
+                <a href="https://www.luogu.com.cn" target="blank">
+                    <img class="luogo" src="https://i.loli.net/2020/01/30/Ek3CyTwjhRu9F87.png" wifth="40px" height="40px" style="margin-left: 40px;"/>
+                </a> 
+                </p>
+        </div>
+        <div class="column joinus">
+            <h5>加入我们</h5>
+                <p onmousemove="long1(0)" onmouseout="short(0)"><strong>联系电话</strong></p>
+                <p onmousemove="long1(1)" onmouseout="short(1)"><strong>人才引进</strong></p>
+                <p onmousemove="long2(2)" onmouseout="short(2)"><strong>媒体及投资者</strong></p>
+        </div>
+        <img class="LOGO" src="https://i.loli.net/2020/01/30/r9uKfYdzohli5QP.png" width="400px" height="130px"/>
+        <span class="power">津网文 【2020】 521-1314号 津A1-20200130-1</span>
+        <span class="copyright">Copyright © 2020 - future Seeker. All Rights Reserved. 宅男工作室 版权所有</span>
+    </div>
+    <script src="seeker.js"></script>
+</body>
+</html>

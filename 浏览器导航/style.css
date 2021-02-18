@@ -1,0 +1,293 @@
+/*2020 1月*/
+/*Seeker 浏览器*/
+/*@帅气的小鹏鹏*/
+*{padding:0;margin:0;}
+ul{list-style-type:none;}
+html body{
+    overflow: hidden;
+    height: 1350px;
+    width: 100%;
+    background-color: #fbfbfb;
+}
+/*加载页面*/
+.line{
+    position:absolute;
+    height:3px;
+    background-color:rgb(165, 14, 14);
+}
+#line1{
+    width:0px;
+    top:1070px;
+    left:600px;
+}
+#line2{
+    width:0px;
+    top:1121px;
+    left:600px;
+}
+#line3{
+    width:0px;
+    top:1175px;
+    left:600px;
+}
+#loading{
+    position: fixed;
+    top:-5px;
+    width:100%;
+    height:1000px;
+    z-index:3;
+    filter:blur(1px);
+}
+#picture{
+    position: fixed;
+    top:200px;
+    left:500px;
+    z-index:3;
+    filter:drop-shadow(2px 2px 4px grey) blur(5px);
+}
+#wechatQRcode{
+    width:150px;
+    height:150px;
+    left:360px;
+    top:730px;
+    opacity: 0;
+    position: absolute;
+    border:solid black;
+}
+#qqQRcode{
+    width:150px;
+    height:150px;
+    left:290px;
+    top:730px;
+    opacity: 0;
+    position: absolute;
+    border:solid black;
+}
+#pao{
+    position: absolute;
+    opacity: 0;
+    top: 270px;
+    left: 946px;
+    width: 90px;
+    height: 60px;
+    background: url('https://i.loli.net/2020/01/31/UxHKoJiEf4qFj8k.png') 60% no-repeat;
+}
+#pao p{
+    position: absolute;
+    top: 18px;
+    left: 26px;
+    font-size:20px;
+    font-family: YouYuan;
+    color:rgb(241, 138, 156);
+}
+/*主体设置*/
+#main{
+    height: 860px;
+    width: 100%;
+    background-image: url("https://i.loli.net/2020/01/30/LE16W7GBcSXTOIb.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/*LOGO*/
+#header{
+    width: 270px;
+    height: 100px;
+    z-index: 1;
+    position: absolute;
+    top: 220px;
+    left: 230px;
+}
+#header img{
+    position: relative;
+    top: -20px;
+    left: -10px;
+}
+#weather{
+    display:none;
+}
+#temperature{
+    display:none;
+}
+#date{
+    font-size:20px;
+    color:white;
+    overflow:hidden;
+}
+.weather{
+    position: absolute;
+    top:200px;
+    right:0px;
+    width:40px;
+    height:200px;
+    background-color:rgb(194, 189, 189,0.2);
+    font-size:10px;
+    font-family:YouYuan;
+    font-weight: bolder;
+    filter:drop-shadow(2px 2px 2px black);
+    border-radius: 1em;
+}
+.weather p{
+    top:70px;
+    margin-top:25px;
+    color:antiquewhite;
+    overflow:hidden;
+}
+#temperature{
+    position: absolute;
+    right:55px;
+    top:5px;
+}
+#weather{
+    position: absolute;
+    right:15px;
+    top:63px;
+}
+.weather:hover{
+    animation:expand 1s forwards;
+}
+.arrow{
+    position: absolute;
+    top:82px;
+    width:32px;
+    height:32px;
+    background:url('./制作素材/其他素材/箭头.png') 100% no-repeat;
+    opacity:1;
+    animation:move 2s infinite;
+}
+/*四个链接*/
+ul{list-style-type: none;}
+li{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    font-size: 24px;
+    color: #eeeeee;
+    position: relative;
+    top: 100px;
+    left: 550px;
+    cursor:pointer;
+}
+li:hover{
+   opacity: 0.7;
+}
+.off{
+    position: absolute;
+    top: 100px;
+    left: 517px;
+    cursor:pointer;
+}
+/*导航条*/
+.main-nav #input{
+    padding-left: 10px;
+    height: 45px;
+    width: 580px;
+    position: absolute;
+    top: 220px;
+    left: 420px;
+    font-size: large;
+    z-index: 1;
+    border-radius: 0.3em;
+    opacity: 0.7;
+    filter: drop-shadocopyw(2px 2px 4px rgba(0, 0, 0, 0.472));
+}
+.main-nav #submit{
+    opacity: 0;
+    height: 47px;
+    position: absolute;
+    top: 221px;
+    left: 967px;
+    z-index: 2;
+    cursor:pointer;
+}
+.main-nav img{
+    height: 47px;
+    position: absolute;
+    top: 221px;
+    left: 967px;
+    z-index: 1;
+    cursor:pointer;
+}
+/*切换背景图开关*/
+.switch {
+    width:64px;
+    height:64px;
+    position: fixed;
+    top: 600px;
+    right: 100px;
+    cursor:pointer;
+    z-index:2;
+    transform-origin: center;
+}
+.switch:hover{
+    filter:drop-shadow(2px 2px 4px black);
+}
+/*底部声明*/
+#footer{
+    position: absolute;
+    height: 500px;
+    width: 100%;
+}
+#footer #bottom-nav span{
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    font-size: x-large;
+    color: silver;
+}
+#footer #bottom-nav span:hover{
+    color: rgba(148, 66, 46, 0.568);
+    cursor: pointer;
+}
+#footer #bottom-nav .qq{
+    position: absolute;
+    top: 50px;
+    left: 350px;
+    cursor:pointer;
+}
+#footer #bottom-nav .wechat{
+    position: absolute;
+    top: 50px;
+    left: 420px;
+    cursor:pointer;
+}
+#footer .recommand{
+    position: absolute;
+    top: 120px;
+    left: 200px;
+}
+#footer .joinus{
+    position: absolute;
+    top: 120px;
+    left: 600px;
+}
+#footer .column h5{
+    font-size: 24px;
+}
+#footer .column p{
+    font-size: 18px;
+    padding-top: 30px;
+    cursor: pointer;
+}
+#footer .column img:hover{
+    filter:drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+#footer .LOGO{
+    position: absolute;
+    top: 180px;
+    right: 200px;
+}
+#footer .power{
+    text-align: center;
+    font-size: small;
+    position: absolute;
+    bottom: 20px;
+    left: 200px;
+}
+#footer .copyright{
+    background-color: #fbfbfb;
+    text-align: center;
+    font-size: small;
+    position: absolute;
+    bottom: 20px;
+    right: 160px;
+}

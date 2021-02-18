@@ -1,0 +1,74 @@
+@keyframes fade{
+    100%{
+        opacity:0;
+    }
+}
+@keyframes emerge{
+    100%{
+        opacity:1;
+    }
+}
+@keyframes move{
+    0%{
+        opacity: 1;
+        background:url('./制作素材/其他素材/箭头.png') 100% no-repeat;
+    }
+    70%{
+        opacity:0.5;
+    }
+    100%{
+        opacity:1;
+        background:url('./制作素材/其他素材/箭头一.png') 100% no-repeat;
+    }
+}
+@keyframes knight{
+    50%{
+        opacity:0.75;
+    }
+    100%{
+        opacity: 1;
+        background-image:url('./制作素材/浏览器背景图/knight.jpg')
+    }
+}
+@keyframes long1{
+    100%{
+        width:70px;
+    }
+}
+@keyframes long2{
+    100%{
+        width:106px;
+    }
+}
+@keyframes short{
+    100%{
+        width:0px;
+    }
+}
+@keyframes change{
+    40%{
+        opacity:0.3;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes rototate{
+    100%{
+        transform: rotate(1440deg);
+    }
+}
+@keyframes expand{
+    100%{
+        width:300px;
+        font-size:30px;
+    }
+}
+@keyframes small{
+    0%{
+        width:300px;
+    }
+    100%{
+        width:40px;
+    }
+}
